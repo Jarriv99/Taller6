@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- CSS BOOSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- estilos css -->
+    <link rel="stylesheet" href="estilosMenu.css">
+    <!-- popupjs -->
+    <script defer src="popup.js"></script>
+</head>
+<body id="blur">
+    <nav class="navbar bg-primary">
+        <h2 class="h2">MENÚ</h2>
+    </nav>
+    <div >
+        <input class="btn btn-warning"  onclick="toggle()" type="button" value="Desplegar Opciones">
+    </div>
+        <div class="col-md-5 mx-auto" id="popup">
+            <div class="card card-body">
+                <input type="button" onclick="location.href='RegistroUsuarios.html'" class="btn btn-danger" value="Registro de Usuarios"><br>
+                <input type="button" onclick="location.href='Grilla.html'" class="btn btn-danger" value="Grilla de Datos">
+            </div>
+        </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+    <script src="Bootstrap.js"></script>
+    <script src="Funciones.js"></script>
+     <!--JS BOOSTRAP  -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

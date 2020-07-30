@@ -1,0 +1,15 @@
+.nav {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+    
+}
+.h2{
+    margin: auto;
+    color: #ecf0f1;
+    
+}
+body{
+    background: url(fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,41 @@
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+}
+.h2{
+    margin: auto;
+    color: #ecf0f1;
+}
+.btn-warning{
+    position: fixed;
+    top: 90px;
+    left: 44%;
+}
+body{
+    background: url(fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-body{
+    background: rgba(45, 52, 54,.7);
+    background-size: cover;
+    background-attachment: fixed;
+    border-color: #0984e3;
+    
+}
+.mx-auto#popup{
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mx-auto#popup.active{
+    
+    top: 200px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
